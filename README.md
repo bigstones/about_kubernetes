@@ -21,3 +21,8 @@ kubeadm : the command to bootstrap the cluster.
 kubelet : the component that runs on all of the machines in your cluster and does things like starting pods and containers.
 
 kubectl : the command line util to talk to your cluster.
+
+## kube 명령어 실행
+$ mkdir -p $HOME/.kube
+$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
