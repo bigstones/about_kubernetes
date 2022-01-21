@@ -22,8 +22,16 @@ kubelet : the component that runs on all of the machines in your cluster and doe
 
 kubectl : the command line util to talk to your cluster.
 
-## kube 명령어 실행
+## kube 명령어 실행 가능한 환경 만들기
 
     mkdir -p $HOME/.kube
     sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
     sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+
+## kubectl 명령어 tab complition 설정
+
+    source <(kubectl completion bash)
+    echo "source <(kubectl completion bash)" >> ~/.bashrc
+
+kubectl kubeadm kubelet 도 설정할 수 있음
