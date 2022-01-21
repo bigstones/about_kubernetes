@@ -29,7 +29,7 @@ kubectl : the command line util to talk to your cluster.
     sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 
-## kubectl 명령어 tab complition 설정
+## kubectl 명령어 bash tab complition 설정
 
     source <(kubectl completion bash)
     echo "source <(kubectl completion bash)" >> ~/.bashrc
