@@ -35,3 +35,16 @@ kubectl : the command line util to talk to your cluster.
     echo "source <(kubectl completion bash)" >> ~/.bashrc
 
 kubectl kubeadm kubelet 도 설정할 수 있음
+
+## 쿠버네티스 배포도구
+
+### 개발자용
+
+    docker desktop
+    minikube
+    
+### 상용
+
+    kubeadm
+    [kops](https://kubernetes.io/docs/setup/production-environment/tools/kops/)
+    [kubespray](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/)
